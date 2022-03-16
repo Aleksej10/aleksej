@@ -1,0 +1,64 @@
+#!/bin/zsh
+
+unsetopt PROMPT_SP
+
+# proxy 
+
+# export ALL_PROXY=http://proxy.rcub.bg.ac.rs:8080
+# export HTTP_PROXY=$ALL_PROXY
+# export HTTPS_PROXY=$ALL_PROXY
+# export FTP_PROXY=$ALL_PROXY
+# export RSYNC_PROXY=$ALL_PROXY
+# export NO_PROXY=.mydomain.com,.local,10.0.2.
+# export http_proxy=$ALL_PROXY
+# export https_proxy=$ALL_PROXY
+# export ftp_proxy=$ALL_PROXY
+# export rsync_proxy=$ALL_PROXY
+# export no_proxy=.mydomain.com,.local,10.0.2.
+
+# Default programs:
+export EDITOR="nvim"
+export ALTERNATE_EDITOR=""
+export HOST="aleksej"
+export TERMINAL="st-256color"
+export TERM="st-256color"
+export XCURSOR_THEME="Bibata-Modern-Ice"
+
+export PATH="$PATH:$HOME/tmp/monero/build/Linux/release-v0.17/release/bin"
+export PATH="$PATH:$HOME/.rvm/bin"
+
+export PATH="$HOME/tmp/goroot/bin/:$PATH"
+
+export ANDROID_HOME="$HOME/Android/Sdk"
+export JAVA_HOME="$HOME/Downloads/jdk-11.0.12+7"
+export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
+export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
+export PATH="$PATH:$ANDROID_SDK_ROOT/tools"
+export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
+export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
+export PATH="$PATH:$HOME/Downloads/android-studio/bin"
+export PATH="$PATH:$HOME/plusless/sb-scripts"
+
+export PATH_TO_FX="$HOME/Downloads/javafx-sdk-11.0.2/lib"
+export PATH="$PATH:$HOME/Downloads/jdk-11.0.12+7/bin"
+
+export PATH="$PATH:$HOME/.cargo/bin"
+
+# ~/ Clean-up:
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XINITRC="${XDG_CONFIG_HOME:-$HOME/.config}/x11/xinitrc"
+export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"
+
+# Color man pages
+export LESS_TERMCAP_mb=$'\E[01;32m'
+export LESS_TERMCAP_md=$'\E[01;32m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[01;47;34m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;36m'
+export LESS=-r
+
+[ "$(tty)" = "/dev/tty1" ] && ! pidof -s Xorg >/dev/null 2>&1 && exec startx "$XINITRC"

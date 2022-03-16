@@ -1,0 +1,11 @@
+keycode 66 = Mode_switch
+keycode 94 = Shift_L
+keysym h = h H Left
+keysym l = l L Right
+keysym k = k K Up
+keysym j = j J Down
+keysym semicolon = semicolon colon BackSpace
+! keysym i = i I Control_L Prior
+! keysym o = o O Control_L Next
+keysym i = i I Prior
+keysym o = o O Next

@@ -1,0 +1,29 @@
+[global]
+    monitor = 0
+    follow = keyboard
+    width = (0, 666)
+    height = 666
+    offset = 0x29
+    padding = 12 
+    frame_width = 0
+    horizontal_padding = 12 
+    separator_height = 0
+    line_height = 6
+    font = Monospace 11
+    format = "<b>%s</b>\n%b"
+    transparency = 20
+
+[urgency_low]
+    background = "#458588"
+    foreground = "#eeeeee"
+    timeout = 3
+
+[urgency_normal]
+    background = "#282828"
+    foreground = "#eeeeee"
+    timeout = 5
+
+[urgency_critical]
+    background = "#d71513"
+    foreground = "#eeeeee"
+    timeout = 10

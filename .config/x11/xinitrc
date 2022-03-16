@@ -1,0 +1,22 @@
+#!/bin/sh
+
+xmodmap $HOME/.config/x11/Xmodmap
+
+# if [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile" ]; then
+# 	. "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile"
+# else
+# 	. "$HOME/.xprofile"
+# fi
+
+sudo chmod o+w /sys/class/backlight/intel_backlight/brightness
+
+setsid picom --experimental-backends -b
+feh --no-fehbg --bg-fill "$HOME/Pictures/wall.png" &
+
+xset r rate 380 55 &
+unclutter -b
+
+setsid dunst &
+setsid goblocks &
+
+ssh-agent dwm
