@@ -71,3 +71,6 @@ map x $$f
 map X !$f
 map o &mimeopen $f
 map O $mimeopen --ask $f
+
+set previewer ~/.config/lf/preview
+set cleaner ~/.config/lf/cleaner

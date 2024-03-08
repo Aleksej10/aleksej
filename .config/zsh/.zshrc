@@ -21,7 +21,7 @@ vcs_info_wrapper() {
   fi
 }
 
-PS1='%B%F{cyan}%~$(vcs_info_wrapper) %f%b'
+PS1='%F{red}%~$(vcs_info_wrapper) %f'
 PS2='%_> '
 PS3='?# '
 PS4='+%N:%i> '
@@ -158,10 +158,13 @@ alias ga='git add .'
 alias gc='git commit -am'
 alias gp='git push'
 alias gs='git status'
-alias v='nvim'
-alias vi='nvim'
 alias ls='lsd'
 alias e='emacsclient -c'
+alias vi='nvim'
+alias v='neovide --nofork --multigrid'
+
+[ -f "$HOME/.config/shell/secure_db_alias" ] && source "$HOME/.config/shell/secure_db_alias"
+
 
 # git config --global alias.hist "log --pretty=format:'%C(yellow)[%ad]%C(reset) %C(green)[%h]%C(reset) | %C(red)%s %C(bold red){{%an}}%C(reset) %C(blue)%d%C(reset)' --graph --date=short"
 
@@ -200,3 +203,8 @@ colors
 source "$HOME/.config/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" 2>/dev/null
 source "$HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh" 2>/dev/null
 # source "$HOME/.config/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh" 2>/dev/null
+
+# [ -f "$HOME/.resh/shellrc" ] && source "$HOME/.resh/shellrc" # this line was added by RESH (Rich Enchanced Shell History)
+
+# bun completions
+[ -f "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"

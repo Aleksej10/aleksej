@@ -24,10 +24,11 @@ export TERMINAL="st-256color"
 export TERM="st-256color"
 export XCURSOR_THEME="Bibata-Modern-Ice"
 
-export PATH="$PATH:$HOME/tmp/monero/build/Linux/release-v0.17/release/bin"
+export PATH="$PATH:$HOME/tmp/monero/build/Linux/release-v0.18/release"
 export PATH="$PATH:$HOME/.rvm/bin"
 
 export PATH="$HOME/tmp/goroot/bin/:$PATH"
+export PATH="$PATH:$HOME/go/bin"
 
 export ANDROID_HOME="$HOME/Android/Sdk"
 export JAVA_HOME="$HOME/Downloads/jdk-11.0.12+7"
@@ -43,6 +44,9 @@ export PATH_TO_FX="$HOME/Downloads/javafx-sdk-11.0.2/lib"
 export PATH="$PATH:$HOME/Downloads/jdk-11.0.12+7/bin"
 
 export PATH="$PATH:$HOME/.cargo/bin"
+
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$PATH:$BUN_INSTALL/bin"
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"

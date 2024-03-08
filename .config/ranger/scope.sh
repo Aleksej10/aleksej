@@ -189,7 +189,7 @@ handle_image() {
                          --pixelsize "80" \
                          --text "  ABCDEFGHIJKLMNOPQRSTUVWXYZ  " \
                          --text "  abcdefghijklmnopqrstuvwxyz  " \
-                         --text "  0123456789.:,;(*!?') filrjgt => /= !=  ***  " \
+                         --text "  @0123456789.:,;(*!?') filrjgt => /= !=  ***  " \
                          --text "  The quick brown fox jumps over the lazy dog.  " \
                          "${FILE_PATH}";
             then

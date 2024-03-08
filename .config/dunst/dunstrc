@@ -14,16 +14,16 @@
     transparency = 20
 
 [urgency_low]
-    background = "#458588"
-    foreground = "#eeeeee"
+    background = "#4b4b4b"
+    foreground = "#efefef"
     timeout = 3
 
 [urgency_normal]
-    background = "#282828"
-    foreground = "#eeeeee"
+    background = "#000000"
+    foreground = "#efefef"
     timeout = 5
 
 [urgency_critical]
-    background = "#d71513"
-    foreground = "#eeeeee"
+    background = "#ce2029"
+    foreground = "#efefef"
     timeout = 10
